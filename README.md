@@ -1,4 +1,4 @@
-Projeto avaliação. CRUD de Agendamento de cursos e Categorias.
+Projeto avaliação backend. CRUD de Agendamento de cursos e Categorias.
 
 Usando:
 
