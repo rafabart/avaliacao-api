@@ -1,0 +1,36 @@
+spring:
+  #  profiles:
+  #    active: ${APP_PROFILE:dev}
+
+  jackson:
+    date-format: yyyy-MM-dd
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: 12qwaszx
+
+
+  jpa:
+    show-sql: false
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    open-in-view: true
+    properties:
+      hibernate:
+        format_sql: true
+    hibernate:
+      ddl-auto: none
+
+
+  flyway:
+    enabled: true
+
+
+
+jwt:
+  # secret=  front_api_password
+  secret: $2a$10$K69mGdwUU.xvQGyaYuKLaOYwvZiicnl.aoulDgFqJLkDNOLhR3VKq
+  withClient: front_api
+  expiration: 86400000
